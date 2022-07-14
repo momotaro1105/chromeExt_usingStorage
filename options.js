@@ -8,3 +8,8 @@ document.querySelectorAll(".colors").forEach((color) => {
         });
     });
 });
+
+document.querySelector("#clear").addEventListener("click", function(){
+    chrome.storage.local.clear();
+    console.log("Storage cleared");
+})
