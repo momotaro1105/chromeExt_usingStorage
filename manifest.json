@@ -1,0 +1,22 @@
+{
+    "name": "storage",
+    "description": "Saving setting to local storage",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "author": "Kenta Aratani",
+    "action": {
+        "default_popup": "bgColor.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "js": ["bgColor.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
